@@ -17,8 +17,6 @@ object StandardTraitTree {
     val traitTree =
       TRAITDEF(protocol.getName)
         .withFlags(Flags.SEALED)
-        .withParents("Product")
-        .withParents("Serializable")
     val treeWithScalaDoc = ScalaDocGenerator.docToScalaDoc(
       Right(protocol),
       traitTree)
